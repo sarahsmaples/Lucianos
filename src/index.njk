@@ -8,7 +8,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
 {% block content %}
 
   <!-- Hero -->
-  <section class="text-white bg-cover bg-center" style="background-image: url('/assets/images/intro-bg.jpg');">
+  <section class="text-white bg-cover bg-center" style="background-image: url('{{ '/assets/images/intro-bg.jpg' | url }}');">
     <div class="max-w-screen-xl px-4 pt-24 pb-10 mx-auto text-center lg:pt-32 lg:pb-12">
       <h1 class="mb-4 text-5xl font-heading tracking-tight leading-none md:text-7xl xl:text-8xl">Luciano's Pizzeria</h1>
       <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-300">Where West Haverstraw comes for pizza, pasta, and good times</p>
@@ -16,24 +16,24 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         <a href="{{ client.orderOnline }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white rounded-full bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
           Order Online
         </a>
-        <a href="/menu/" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-white rounded-full hover:bg-white hover:text-black">
+        <a href="{{ '/menu/' | url }}" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-white rounded-full hover:bg-white hover:text-black">
           View Menu
         </a>
       </div>
       <div class="mx-auto mt-10 w-80 md:w-[28rem] lg:w-[32rem]" style="margin-bottom: -10rem;">
-        <img src="/assets/images/pizza.png" alt="Fresh pizza" class="w-full">
+        <img src="{{ '/assets/images/pizza.png' | url }}" alt="Fresh pizza" class="w-full">
       </div>
     </div>
   </section>
 
   <!-- Menu Highlights -->
-  <section class="relative z-[1] -mt-56 bg-no-repeat" style="background-image: url('/assets/images/white-bg.png'); background-size: 100% 100%;">
+  <section class="relative z-[1] -mt-56 bg-no-repeat" style="background-image: url('{{ '/assets/images/white-bg.png' | url }}'); background-size: 100% 100%;">
     <div class="max-w-screen-xl px-4 pt-36 pb-28 mx-auto lg:pt-44 lg:pb-32">
       <h2 class="mb-10 text-3xl font-heading tracking-tight text-center text-gray-900 md:text-4xl">What We Serve</h2>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/pepperoni-pizza.jpg" alt="Pepperoni pizza" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/pepperoni-pizza.jpg' | url }}" alt="Pepperoni pizza" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Pizza</h3>
             <p class="text-gray-600">Classic New York-style pies made with hand-tossed dough, house-made sauce, and fresh mozzarella. Build your own or try one of our specialty pizzas.</p>
@@ -41,7 +41,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/pasta.jpg" alt="Pasta dish" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/pasta.jpg' | url }}" alt="Pasta dish" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Pasta</h3>
             <p class="text-gray-600">From Penne Vodka to Chicken Parmigiana over spaghetti, our pasta dishes are hearty, homemade, and always satisfying.</p>
@@ -49,7 +49,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/cheesesteak.jpg" alt="Cheesesteak hero" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/cheesesteak.jpg' | url }}" alt="Cheesesteak hero" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Heroes &amp; Subs</h3>
             <p class="text-gray-600">Hot and cold heroes piled high with premium meats, fresh veggies, and melted cheese. Try our famous Cheesesteak or Chicken Parm Hero.</p>
@@ -57,7 +57,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/mozzarella-sticks.jpg" alt="Mozzarella sticks" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/mozzarella-sticks.jpg' | url }}" alt="Mozzarella sticks" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Appetizers</h3>
             <p class="text-gray-600">Start your meal with our crispy Mozzarella Sticks, Buffalo Wings, or a fresh Caesar Salad.</p>
@@ -65,7 +65,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/salad.jpg" alt="Fresh salad" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/salad.jpg' | url }}" alt="Fresh salad" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Salads</h3>
             <p class="text-gray-600">Fresh, crisp salads made to order. Perfect as a side or a lighter meal option.</p>
@@ -73,7 +73,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
 
         <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
-          <img src="/assets/images/wings.jpg" alt="Buffalo wings" class="w-full h-48 object-cover">
+          <img src="{{ '/assets/images/wings.jpg' | url }}" alt="Buffalo wings" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="mb-2 text-xl font-bold text-primary-700">Catering</h3>
             <p class="text-gray-600">Hosting a party or event? We offer catering trays for all occasions. Call us to place your order.</p>
@@ -82,7 +82,7 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
 
       </div>
       <div class="mt-10 text-center">
-        <a href="/menu/" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+        <a href="{{ '/menu/' | url }}" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
           See Full Menu
         </a>
       </div>
@@ -90,9 +90,9 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
   </section>
 
   <!-- About -->
-  <section class="relative -mt-16 bg-no-repeat" style="background-image: url('/assets/images/black-bg.png'); background-size: 100% 100%;">
-    <img src="/assets/images/pasta.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-96 -rotate-12 pointer-events-none">
-    <img src="/assets/images/parmesan.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-12 pointer-events-none">
+  <section class="relative -mt-16 bg-no-repeat" style="background-image: url('{{ '/assets/images/black-bg.png' | url }}'); background-size: 100% 100%;">
+    <img src="{{ '/assets/images/pasta.png' | url }}" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-96 -rotate-12 pointer-events-none">
+    <img src="{{ '/assets/images/parmesan.png' | url }}" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-12 pointer-events-none">
     <div class="max-w-screen-xl px-4 pt-28 pb-28 mx-auto lg:pt-32 lg:pb-32">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="mb-6 text-3xl font-heading tracking-tight text-primary-700 md:text-4xl">About Luciano's</h2>
@@ -106,9 +106,9 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
 
   <!-- Contact Form -->
   <section class="relative -mt-16">
-    <img src="/assets/images/white-top-edge.png" alt="" class="w-full block">
-    <img src="/assets/images/tomatoes.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-80 pointer-events-none z-[2]">
-    <img src="/assets/images/basil.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-45 pointer-events-none z-[2]">
+    <img src="{{ '/assets/images/white-top-edge.png' | url }}" alt="" class="w-full block">
+    <img src="{{ '/assets/images/tomatoes.png' | url }}" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-80 pointer-events-none z-[2]">
+    <img src="{{ '/assets/images/basil.png' | url }}" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-45 pointer-events-none z-[2]">
     <div class="bg-white -mt-8 -mb-8 relative z-[1]">
       <div class="max-w-screen-xl px-4 mx-auto">
         <h2 class="mb-8 text-3xl font-heading tracking-tight text-center text-gray-900 md:text-4xl">Contact Us</h2>
@@ -117,12 +117,12 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
         </div>
       </div>
     </div>
-    <img src="/assets/images/white-bottom-edge.png" alt="" class="w-full block">
+    <img src="{{ '/assets/images/white-bottom-edge.png' | url }}" alt="" class="w-full block">
   </section>
 
   <!-- Contact / Location -->
-  <section id="contact" class="relative bg-no-repeat overflow-hidden" style="background-image: url('/assets/images/black-bg.png'); background-size: 100% calc(100% + 10rem); background-position: top center;">
-    <img src="/assets/images/mushrooms.png" alt="" class="hidden lg:block absolute bottom-12 left-4 w-80 pointer-events-none">
+  <section id="contact" class="relative bg-no-repeat overflow-hidden" style="background-image: url('{{ '/assets/images/black-bg.png' | url }}'); background-size: 100% calc(100% + 10rem); background-position: top center;">
+    <img src="{{ '/assets/images/mushrooms.png' | url }}" alt="" class="hidden lg:block absolute bottom-12 left-4 w-80 pointer-events-none">
     <div class="max-w-screen-xl px-4 pt-40 pb-28 mx-auto lg:pt-48 lg:pb-32">
       <h2 class="mb-10 text-3xl font-heading tracking-tight text-center text-primary-700 md:text-4xl">Find Us</h2>
       <div class="grid gap-8 md:grid-cols-2">
