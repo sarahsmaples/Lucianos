@@ -1,0 +1,172 @@
+---
+title: Home
+description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pizza, pasta, subs, and more. Order online for pickup or delivery."
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+  <!-- Hero -->
+  <section class="text-white bg-cover bg-center" style="background-image: url('/assets/images/intro-bg.jpg');">
+    <div class="max-w-screen-xl px-4 pt-24 pb-10 mx-auto text-center lg:pt-32 lg:pb-12">
+      <h1 class="mb-4 text-5xl font-heading tracking-tight leading-none md:text-7xl xl:text-8xl">Luciano's Pizzeria</h1>
+      <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-300">Where West Haverstraw comes for pizza, pasta, and good times</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="{{ client.orderOnline }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white rounded-full bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+          Order Online
+        </a>
+        <a href="/menu/" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-white rounded-full hover:bg-white hover:text-black">
+          View Menu
+        </a>
+      </div>
+      <div class="mx-auto mt-10 w-80 md:w-[28rem] lg:w-[32rem]" style="margin-bottom: -10rem;">
+        <img src="/assets/images/pizza.png" alt="Fresh pizza" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Highlights -->
+  <section class="relative z-[1] -mt-56 bg-no-repeat" style="background-image: url('/assets/images/white-bg.png'); background-size: 100% 100%;">
+    <div class="max-w-screen-xl px-4 pt-36 pb-28 mx-auto lg:pt-44 lg:pb-32">
+      <h2 class="mb-10 text-3xl font-heading tracking-tight text-center text-gray-900 md:text-4xl">What We Serve</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/pepperoni-pizza.jpg" alt="Pepperoni pizza" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Pizza</h3>
+            <p class="text-gray-600">Classic New York-style pies made with hand-tossed dough, house-made sauce, and fresh mozzarella. Build your own or try one of our specialty pizzas.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/pasta.jpg" alt="Pasta dish" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Pasta</h3>
+            <p class="text-gray-600">From Penne Vodka to Chicken Parmigiana over spaghetti, our pasta dishes are hearty, homemade, and always satisfying.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/cheesesteak.jpg" alt="Cheesesteak hero" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Heroes &amp; Subs</h3>
+            <p class="text-gray-600">Hot and cold heroes piled high with premium meats, fresh veggies, and melted cheese. Try our famous Cheesesteak or Chicken Parm Hero.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/mozzarella-sticks.jpg" alt="Mozzarella sticks" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Appetizers</h3>
+            <p class="text-gray-600">Start your meal with our crispy Mozzarella Sticks, Buffalo Wings, or a fresh Caesar Salad.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/salad.jpg" alt="Fresh salad" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Salads</h3>
+            <p class="text-gray-600">Fresh, crisp salads made to order. Perfect as a side or a lighter meal option.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+          <img src="/assets/images/wings.jpg" alt="Buffalo wings" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-bold text-primary-700">Catering</h3>
+            <p class="text-gray-600">Hosting a party or event? We offer catering trays for all occasions. Call us to place your order.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mt-10 text-center">
+        <a href="/menu/" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+          See Full Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="relative -mt-16 bg-no-repeat" style="background-image: url('/assets/images/black-bg.png'); background-size: 100% 100%;">
+    <img src="/assets/images/pasta.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-96 -rotate-12 pointer-events-none">
+    <img src="/assets/images/parmesan.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-12 pointer-events-none">
+    <div class="max-w-screen-xl px-4 pt-28 pb-28 mx-auto lg:pt-32 lg:pb-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="mb-6 text-3xl font-heading tracking-tight text-primary-700 md:text-4xl">About Luciano's</h2>
+        <p class="text-lg text-white leading-relaxed mb-8">Luciano's Pizzeria has been a West Haverstraw favorite for authentic Italian food made fresh daily. From hand-tossed New York-style pizza to hearty pasta dishes and stacked heroes, everything is made to order with quality ingredients. We offer free delivery so you can enjoy our food from the comfort of your home. Stop by, call us, or order online!</p>
+        <a href="{{ client.orderOnline }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+          Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="relative -mt-16">
+    <img src="/assets/images/white-top-edge.png" alt="" class="w-full block">
+    <img src="/assets/images/tomatoes.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-4 w-80 pointer-events-none z-[2]">
+    <img src="/assets/images/basil.png" alt="" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-4 w-80 rotate-45 pointer-events-none z-[2]">
+    <div class="bg-white -mt-8 -mb-8 relative z-[1]">
+      <div class="max-w-screen-xl px-4 mx-auto">
+        <h2 class="mb-8 text-3xl font-heading tracking-tight text-center text-gray-900 md:text-4xl">Contact Us</h2>
+        <div class="mx-auto" style="max-width: 700px;">
+          <iframe src="https://88restaurants.com/1152/contact_forms" frameborder="0" width="100%" height="545" scrolling="no" title="Contact Form"></iframe>
+        </div>
+      </div>
+    </div>
+    <img src="/assets/images/white-bottom-edge.png" alt="" class="w-full block">
+  </section>
+
+  <!-- Contact / Location -->
+  <section id="contact" class="relative bg-no-repeat overflow-hidden" style="background-image: url('/assets/images/black-bg.png'); background-size: 100% calc(100% + 10rem); background-position: top center;">
+    <img src="/assets/images/mushrooms.png" alt="" class="hidden lg:block absolute bottom-12 left-4 w-80 pointer-events-none">
+    <div class="max-w-screen-xl px-4 pt-40 pb-28 mx-auto lg:pt-48 lg:pb-32">
+      <h2 class="mb-10 text-3xl font-heading tracking-tight text-center text-primary-700 md:text-4xl">Find Us</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+
+        <!-- Info -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Address</h3>
+            <p class="text-gray-300">{{ client.address.street }}<br>{{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Phone</h3>
+            <p class="text-gray-300">
+              <a href="tel:{{ client.phone }}" class="text-primary-400 hover:underline">{{ client.phone }}</a><br>
+              <a href="tel:{{ client.phone2 }}" class="text-primary-400 hover:underline">{{ client.phone2 }}</a>
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Hours</h3>
+            <p class="text-gray-300">{{ client.hours.weekday }}<br>{{ client.hours.weekend }}</p>
+          </div>
+          <div>
+            <a href="{{ client.orderOnline }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+              Order Online
+            </a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.8!2d-73.985!3d41.207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s19+S+RT+9W+West+Haverstraw+NY+10993!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%"
+            height="350"
+            style="border:0; border-radius: 0.5rem;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Luciano's Pizzeria Location">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
