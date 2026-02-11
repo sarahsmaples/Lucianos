@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Retro Team"', 'cursive'],
+        heading: ['"Staatliches"', 'sans-serif'],
+        sans: ['"Roboto"', 'sans-serif'],
       },
       colors: {
         primary: {
