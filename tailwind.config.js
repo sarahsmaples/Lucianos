@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: ['"Staatliches"', 'sans-serif'],
+        display: ['"Retro Team"', 'cursive'],
         sans: ['"Roboto"', 'sans-serif'],
       },
       colors: {
