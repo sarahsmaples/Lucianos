@@ -7,6 +7,11 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
 
 {% block content %}
 
+  <style>
+    #location { background-image: url('{{ '/assets/images/black-bg-mobile.png' | url }}'); }
+    @media (min-width: 768px) { #location { background-image: url('{{ '/assets/images/black-bg.png' | url }}'); } }
+  </style>
+
   <!-- Hero -->
   <section class="text-white bg-cover bg-center min-h-[85vh] md:min-h-0" style="background-image: url('{{ '/assets/images/intro-bg.jpg' | url }}');">
     <div class="max-w-screen-xl px-4 pt-24 pb-10 mx-auto text-center lg:pt-32 lg:pb-12">
@@ -133,8 +138,8 @@ description: "Luciano's Pizzeria in West Haverstraw, NY — authentic Italian pi
   </section>
 
   <!-- Contact / Location -->
-  <section class="relative overflow-hidden section-bg-tall" style="background-image: url('{{ '/assets/images/black-bg.png' | url }}');">
-    <div class="max-w-screen-xl px-4 pt-40 pb-28 mx-auto lg:pt-48 lg:pb-32">
+  <section id="location" class="relative overflow-hidden section-bg-tall">
+    <div class="max-w-screen-xl px-4 pt-52 pb-28 mx-auto lg:pt-60 lg:pb-32">
       <h2 class="scroll-animate mb-10 text-3xl font-heading tracking-tight text-center text-white md:text-4xl">Find Us</h2>
       <div class="grid gap-8 md:grid-cols-[3fr_2fr] max-w-4xl mx-auto">
 
