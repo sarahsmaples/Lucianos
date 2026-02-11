@@ -58,12 +58,12 @@
 
   </head>
 
-  <body>
+  <body class="{% block bodyClass %}{% endblock %}">
     {% include "components/header.njk" %}
     <main>
       {% block content %}{% endblock %}
     </main>
-    {% include "components/footer.njk" %}
+    {% block footer %}{% include "components/footer.njk" %}{% endblock %}
     <script src="{{ '/assets/js/main.js' | url }}"></script>
   </body>
 </html>

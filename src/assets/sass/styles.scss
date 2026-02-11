@@ -9,3 +9,85 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Page-load animations (hero) ── */
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.9s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+
+/* ── Scroll-triggered animations ── */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive section backgrounds ── */
+.section-bg {
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 100% 100%;
+  }
+}
+
+.section-bg-tall {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (min-width: 768px) {
+    background-size: 100% calc(100% + 10rem);
+    background-position: top center;
+  }
+}
+
+/* ── Card image hover zoom ── */
+.card-img-wrap img {
+  transition: transform 0.5s ease;
+}
+
+.card-img-wrap:hover img {
+  transform: scale(1.08);
+}
